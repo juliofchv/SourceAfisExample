@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+description = 'SourceAfis'
+
+mainClassName = 'SourceAfisTest.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'com.machinezoo.sourceafis', name: 'sourceafis', version: '3.5.3'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0-alpha0'
+
+    compile files ("D:/drivers/SecuGen/FDx SDK Pro for Windows v3.85_J1.12/FDx SDK Pro for Java Windows v1.12/FDxSDKPro.jar")
+    compile files ("D:/gigaDatta/2019/GRADLE LIBS/GDUtils/build/libs/GDUtils-4.0.jar")
+}
